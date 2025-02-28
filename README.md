@@ -16,15 +16,15 @@ from french_public_holidays import FrenchPublicHolidays
 fph = FrenchPublicHolidays()
 
 # Check if a date is a French public holiday
-is_holiday = fph.is_holiday('2023-07-14')
+is_holiday = fph.is_public_holiday('2023-07-14')
 print(is_holiday)  # True (Bastille Day)
 
 # Get the name of the holiday
-holiday_name = fph.get_holiday_name('2023-07-14')
+holiday_name = fph.get_public_holiday('2023-07-14')
 print(holiday_name)  # 'Fête nationale'
 
 # Get all holidays for a specific year
-holidays_2023 = fph.get_holidays(2023)
+holidays_2023 = fph.get_public_holidays(2023)
 print(holidays_2023)
 ```
 
